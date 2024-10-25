@@ -1,0 +1,30 @@
+{
+  "transactions": [
+    { "id": 1, "description": "Grocery", "amount": -50 },
+    { "id": 2, "description": "Electricity Bill", "amount": -75 },
+    { "id": 3, "description": "Rent", "amount": -1200 }
+  ],
+  "notifications": [
+    { "id": 1, "message": "Don't forget to log your daily expenses!" },
+    { "id": 2, "message": "Your monthly budget is almost spent!" }
+  ],
+  "budgets": [
+    { "id": 1, "amount": 1500 }
+  ],
+  "income": [
+    { "id": 1, "amount": 2000 }
+  ],
+  "total": [
+    { "id": 1, "amount": 675 }
+  ],
+  "accounts": [
+    { "id": 1, "name": "Bank Account", "balance": "45.00", "icon": "🏦" },
+    { "id": 2, "name": "Savings", "balance": "100.00", "icon": "💰" },
+    { "id": 3, "name": "My Wallet", "balance": "4,8.00", "icon": "👛" },
+    { "id": 4, "name": "Business Credit", "balance": "12,000.00", "icon": "💼" },
+    { "id": 5, "name": "Card", "balance": "40.00", "icon": "💳" },
+    { "id": 6, "name": "Credit Card", "balance": "8,960.00", "icon": "💳" },
+    { "id": 7, "name": "Emergency Fund", "balance": "100.00", "icon": "🚨" },
+    { "id": 8, "name": "Stripe", "balance": "500.00", "icon": "🌐" }
+  ]
+}

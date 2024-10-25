@@ -1,0 +1,222 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffffff, #ffffff); /* Dark gradient background */
+  color: #f5f5f5; /* Light text color for contrast */
+  overflow-x: hidden;
+}
+
+.home-screen {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+h1, h2 {
+  margin: 20px 0;
+  color: #f5f5f5; /* Consistent light color */
+}
+
+/* Navbar Styling */
+.navbar {
+  background: #d400ff; /* Bright blue navbar */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+/* Navbar Styling */
+.navbar {
+  background: #ff6347; /* Your navbar background */
+  display: flex;
+  justify-content: center; /* Center content in the navbar */
+  align-items: center; /* Vertically center items */
+  padding: 10px 20px; /* Padding around the navbar */
+}
+.right-align {
+  font-style: italic;
+  padding: 20px;
+  margin-left: 10px; /* Adjust this value to move the text further right */
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5em;
+  animation: fadeInDown 1s ease-out;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+  color: #ffc107; /* Yellow color on hover */
+  transform: scale(1.2);
+}
+
+/* Feature Cards */
+.features {
+  margin: 30px 0;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Bright contrasting gradient */
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.5s;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(135deg, 4F42B5, 4F42B5); /* Lighter hover effect */
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1), rgba(255,255,255,0) 70%); /* Subtle highlight */
+  transition: transform 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.feature-card:hover::before {
+  transform: translate(50%, 50%);
+}
+
+/* Footer Styling */
+.footer {
+  background: 4F42B5; /* Bright blue footer */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Background Animation */
+.background-animation {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: floaty 6s ease-in-out infinite;
+  z-index: -1;
+}
+
+.background-animation:nth-child(1) {
+  top: 10%;
+  left: 15%;
+  animation-duration: 7s;
+}
+
+.background-animation:nth-child(2) {
+  top: 60%;
+  left: 70%;
+  animation-duration: 8s;
+}
+
+.background-animation:nth-child(3) {
+  top: 30%;
+  left: 80%;
+  animation-duration: 6s;
+}
+
+/* Keyframes for Animations */
+@keyframes floaty {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* GIF Container Styling */
+.gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-gif {
+  width: 100%; /* Adjust size as needed */
+  max-width: 500px; /* Constrain maximum width */
+  height: auto;
+  margin-top: 15px;
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.footer .MuiTypography-root {
+  font-size: 14px;
+  color: white;
+}

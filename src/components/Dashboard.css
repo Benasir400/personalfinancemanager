@@ -1,0 +1,68 @@
+/* Dashboard.css */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f6f8; /* Light background for the whole dashboard */
+  }
+  
+  .dashboard-sidebar {
+    width: 240px;
+    background-color: #2e3b55; /* Dark color for the sidebar */
+    color: #fff;
+  }
+  
+  .dashboard-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .account-card {
+    background-color: #4caf50; /* Green color for account cards */
+    color: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .account-card:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+  }
+  
+  .account-card .icon {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .account-card .balance {
+    font-weight: bold;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dashboard-title {
+    font-weight: bold;
+  }
+  
+  .dashboard-subtitle {
+    color: #757575;
+  }
+  
+  .footer {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #2e3b55;
+    color: #fff;
+    text-align: center;
+  }
+  

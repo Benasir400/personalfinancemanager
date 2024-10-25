@@ -1,0 +1,55 @@
+.expense-tracker-header {
+     /* Background color similar to the image */
+    padding: 5px;
+    color: #007bff; /* Text color similar to the image */
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .nav-button {
+    background: none;
+    border: none;
+    color: #c42700;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .nav-button:hover {
+    color: #007bff;
+  }
+  
+  .summary-section {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .summary-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .expense-amount {
+    color: #ff6666; /* Red color for expense */
+    font-size: 1.5rem;
+  }
+  
+  .income-amount {
+    color: #66cc66; /* Green color for income */
+    font-size: 1.5rem;
+  }
+  
+  .total-amount {
+    color: #66cc66; /* Green color for total */
+    font-size: 1.5rem;
+  }
+  
