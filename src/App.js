@@ -18,6 +18,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<HomeScreen />} />
+          <Route path="/login" element={<Login/>} />
           <Route path="/transactions" element={<TransactionPage />} />
           <Route path="/notifications" element={<NotificationPage />} />
           <Route path="/budget" element={<BudgetPage />} />
