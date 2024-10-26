@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, IconButton, Typography, Container, Grid, Card, CardContent, CardActions, Button } from '@mui/material';
-import { FaBell, FaUser, FaSignOutAlt, FaChartLine } from 'react-icons/fa';
+import { FaBell, FaUser, FaSignOutAlt, FaChartLine, FaSignInAlt } from 'react-icons/fa';
 import './HomeScreen.css';
 import Your from '../Your.gif';
 const HomeScreen = () => {
@@ -13,6 +13,9 @@ const HomeScreen = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             <h2 style={{ fontStyle: 'italic' }}>Personal Finance Manager</h2>
           </Typography>
+          <IconButton color="inherit" component={Link} to="/login">
+          <FaSignInAlt/>
+          </IconButton>
           <IconButton color="inherit" component={Link} to="/notifications">
             <FaBell />
           </IconButton>
